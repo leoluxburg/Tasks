@@ -19,12 +19,12 @@
 
 
 		{% for post in post %}
-			<h3> {post.name} </h1>
-			<h3>{post.last_name}</h3>
-			<h3>{post.birthday}</h3>
-			<h3>{post.genered}</h3>
-			<h3>{post.bloodt}</h3>
-			<h3>{post.adress}</h3>
+			<h3> {{post.name}} </h1>
+			<h3>{{post.last_name}}</h3>
+			<h3>{{post.birthday}}</h3>
+			<h3>{{post.genered}}</h3>
+			<h3>{{post.bloodt}}</h3>
+			<h3>{{post.adress}}</h3>
 			<h5>Hora de publiacion: {{ post.date.strftime('%d/%m/%Y') }}</h5>
 			<br>
 			<br>
