@@ -1,11 +1,12 @@
 from flask import Flask, render_template, request, redirect, url_for
 from models import *
 
-app = Flask(__name__)
+app = Flask(__name__ ,static_url_path='/static')
 
 @app.before_request
 def before_request():
 	initialize_db()
+
 
 @app.teardown_request
 def teardown_request(exception):

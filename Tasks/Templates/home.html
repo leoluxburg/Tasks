@@ -1,10 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<title>Tasks Apuennta - Recuerda - Haz</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<link href="{{ url_for('static',filename = 'css/style.css') }}">
+	<link href= "{{ url_for('static', filename = 'css/bootstrap.min.css') }} " rel = "stylesheet">
+
 </head>
+
 <body>
-	<H1>WELCOME TO TASKS</H1>
-	<a href="new_post"> Start Using Tasks </a>	
+	<div id="main" style="padding: 150px 0;
+	text-align: center;
+	background-color: black;
+	color: white;">
+		<h1>Bienvenido a TASKS v0.01</h1>
+		<h4 style=" color:#08B2E3;
+	font-size: 20px;
+	font-weight: lighter;
+	opacity: 0.8;">Apuennta - Recuerda - Haz</h4>
+		<a href="new_post" class="btn btn-primary"> Comiensa a usar Tasks </a>
+	</div>
+	<div class = "container">
+		<div class="row">
+			<div class="col-xs-12 col-md-4">		
+				<div class="cards" style = "text-align: center;
+				padding: 50px;
+				background-color: white;">
+				<img src="/static/images/simple.svg" height="140" width="80"/>
+					<h3>Simple</h3>
+					<p>Muy facil de usar solo escribe y recuerda todo lo tienes que hacer.</p>
+				</div>
+			</div>	
+			<div class="col-xs-12 col-md-4">
+				<div class="cards" style = "text-align: center;
+				padding: 50px;
+				background-color: white;">
+					<img src="/static/images/util.svg" height="130" width="80" />
+					<h3>Util</h3>
+					<p>Apunta todo lo que quieras compras, tareas, requisitos TODO!</p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-4">		
+				<div class="cards" style = "text-align: center;
+				padding: 50px;
+				background-color: white;">
+					<img src="/static/images/free.svg" height="130" width="80" />
+					<h3>Sin costo</h3>
+					<p>No tienes limite solo escribe lo que necesites.</p>
+				</div>
+			</div>
+		</div>	
+	</div>	
+
+	<div class="footer" style="background: black;
+	color: white;
+	font-size: 20px;
+	padding: 20px; 
+	font-size: 20px;
+	color: grey;
+	">
+		<ul class="list-inline">
+			<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+		</ul>	
+	</div>
 </body>
 </html>

@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
-	<body>
+<head>
+	<meta charset="utf-8">
+	<title>Tasks Apuennta - Recuerda - Haz</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<link href="{{ url_for('static',filename = 'css/style.css') }}">
+	<link href= "{{ url_for('static', filename = 'css/bootstrap.min.css') }} " rel = "stylesheet">
+<body>
+<!--banner-->
+	<div id="main" style="padding: 150px 0;
+	text-align: center;
+	background-color: black;
+	color: white;">
+		<h1>Bienvenido a TASKS v0.01</h1>
+		<h4 style=" color:#08B2E3;
+	font-size: 20px;
+	font-weight: lighter;
+	opacity: 0.8;">Apuennta - Recuerda - Haz</h4>
+		<a href="new_post" class="btn btn-primary"> Comiensa a usar Tasks </a>
+	</div>
+	
 	<center>
 	<a href="new_post"> Add </a>	
 	
@@ -10,8 +29,25 @@
 		<p> {{post.tasks}} </p>
 		<br>
 		<br>
+		</form>
 	{%endfor%}
-
 	</center>
-	</body>
+
+<!--footer-->
+	<div class="footer" style="background: black;
+	color: white;
+	font-size: 20px;
+	padding: 20px; 
+	font-size: 20px;
+	color: grey;
+	">
+		<ul class="list-inline">
+			<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+		</ul>	
+	</div>
+
+</body>
 </html>
