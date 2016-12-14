@@ -21,15 +21,14 @@
 	</div>
 	
 	<center>
-	<a href="new_post"> Add </a>	
+	<a href="new_post" class="btn btn-primary"> Add </a>	
 	
 	{% for post in posts %}
 		<h1> {{post.title}} </h1>
-		<h4> Posted at: {{post.date.strftime('%m/%d/%Y at %G:%I%p')}} </h4>
+		<h4> Hora: {{post.date.strftime('%m/%d/%Y at %G:%I%p')}} </h4>
 		<p> {{post.tasks}} </p>
 		<br>
 		<br>
-		</form>
 	{%endfor%}
 	</center>
 
@@ -42,10 +41,14 @@
 	color: grey;
 	">
 		<ul class="list-inline">
-			<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-			<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-			<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-			<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+			<li style="
+			color: white;"><a href="#">Twitter</a></li>
+			<li style="
+			color: white;"><a href="#">Facebook</a></li>
+			<li style="
+			color: white;"><a href="#">Youtube</a></li>
+			<li style="
+			color: white;"><a href="#">Instagram</a></li>
 		</ul>	
 	</div>
 
